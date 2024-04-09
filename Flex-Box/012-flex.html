@@ -10,11 +10,14 @@
   <style>
     .flex {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
 
     .flex .item {
+      /* flex trabalha com flex grow (aumenta a largura do filho),
+       flex shrink (diminui a largura do filho), flex basis(sobrescreve o css inicial) */
       flex: 1 1 auto;
+      /*auto se adequada ao conteúdo para não o bagulho*/
     }
 
     .flex .item:nth-of-type(4) {
